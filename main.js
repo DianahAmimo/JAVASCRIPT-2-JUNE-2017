@@ -14,7 +14,7 @@ function getName(){
 }
 
 document.getElementById('search').onclick = function(){
-	var search = comfirm('Press OK to search and Cancel to Exit');
+	var search = confirm('Press OK to search and Cancel to Exit');
 
 	// Promise
 	var checking = new Promise(
@@ -25,11 +25,26 @@ document.getElementById('search').onclick = function(){
 	                keyword: 'content'
 	            };
 	            resolve(search); // fulfilled
-	        } else {
+	           alert(data.content+' '+data.keyword);
+	        }
+	        else {
 	            var reason = new Error('Not Searching');
 	            reject(reason); // reject
+	           
 	        }
-
 	    }
 	);
+	// Calling the promise
+	let check = function(){
+		checking
+		.then (function (fulfilled){
+			alert('fulfilled');
+			
+		})
+		.catch (function (error){
+			alert('error.message');
+		});
+		}
+
+	check();	
 }
