@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LEARNING FOUNDATION IS FUN </title>
+	<link rel="stylesheet" href="node_modules/foundation-sites/dist/css/foundation.css">
+  <link rel="stylesheet" href="foundation/css/style.css" type="text/css">
+</head>
+<body>
+
+<H3>WELCOME TO TODAY'S LESSON</H3>
+
+<container>
+<wrapper class="my-color">
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"><a href="#">INTRODUCTION</a></li>
+      <li>
+        <a href="#">BUTTONS</a>
+        <ul class="menu vertical">
+          <li><a href="#">Default button</a></li>
+          <li><a href="#">Round button</a></li>
+          <li><a href="#">Radius button</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FORMS</a></li>
+      <li><a href="#">NAVIGATION</a></li>
+    </ul>
+  </div>
+
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li id="search"><button  type="button" class="button radius">Search</button></li>
+    </ul>
+  </div>
+</div>
+
+ <div class="media-object">
+ <div class="media-object-section middle">
+ <div class="thumbnail">
+ <img src= "car1.jpg">
+ </div>
+ </div>
+
+ <div class="media-object-section">
+ <h4>BASICS</h4>
+
+ <p>Building an AI Chip Saved Google from Building a Dozen New Data Centers
+As a company experiences constant growth and expansion in its market, the amount of data increases. This necessitates an improvement to be done on how the data will be handled in order to keep up with the efficiency and effectiveness of service delivery to the clients. When Google launched its voice recognition services, the amount of data that was streaming in to their servers increased at a very high rate. 
+
+This made it necessary for them to find a way of increasing their storage capacity. They chose to build an AI chip (the Tensor Processing Unit) that would help them manage the large amounts of data, over increasing the number of their server units. The choice was very wise because it was less costly and more efficient compared to building new data centers. The chip is much more energy efficient and it manages the execution of neural networks.
+</p>
+</div>
+
+<form>
+  <fieldset>
+   <div class="large-6 columns">
+    <legend>DIANNES'S TUTORIAL CORNER</legend>
+
+    <label>First name:
+      <input id="form-input" type="text" placeholder="Enter firstname" class="large-4 columns">
+    </label>
+
+    <label>Last name:
+      <input id="form-input" type="text" placeholder="Lastname">
+    </label>
+
+    <label>Username:
+      <input id="form-input" type="text" placeholder="Username">
+    </label>
+   
+     <label>Location
+        <select>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Nakuru">Nakuru</option>
+          <option value="Narok">Narok</option>
+          <option value="Naromoru">Naromoru</option>
+        </select>
+      </label>
+    </div>
+  </div>
+ <div class="row">
+    <div class="large-6 columns">
+      <label>Gender: </label>
+      <input type="radio" name="female" value="Female" id="female"><label for="female">Female</label>
+      <input type="radio" name="male" value="Male" id="male"><label for="male">Male</label>
+    </div>
+    <div class="large-6 columns">
+      <label>Select class</label>
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">Full time</label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">Part time</label>
+    </div>
+  </div>
+ </div>
+
+ <a id="sign-up" href="#" class="button round">SIGN UP</a>
+ <a id="feedback" href="#" class="button round">FEEDBACK</a>
+
+  </fieldset>
+</form>
+</div>
+</wrapper>
+</container>
+
+<!-- adding main.js file -->
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+
+</script>
+
+</body>
+</html>
