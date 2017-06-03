@@ -30,7 +30,7 @@ document.getElementById('search').onclick = function(){
 	        else {
 	            var reason = new Error('Not Searching');
 	            reject(reason); // reject
-	           
+	            alert('Not searching');
 	        }
 	    }
 	);
